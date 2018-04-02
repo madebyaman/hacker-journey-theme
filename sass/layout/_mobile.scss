@@ -1,0 +1,40 @@
+.title-area img {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  max-width: 75px;
+}
+
+.site-title {
+  margin-bottom: 0;
+}
+
+.call-to-action {
+  background: $color__background-header;
+  color: $color__text-header;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  width: 100%;
+  a {
+    @include button;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.site-footer {
+  background: #F5F5F5;
+  color: $color__text-main;
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.site-header>.wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

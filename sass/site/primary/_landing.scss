@@ -1,0 +1,101 @@
+.hacker-landing {
+  .site-container {
+    display: block;
+  }
+  & .site-header .title-area,
+  & .site-inner .content {
+    width: 70%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .site-inner>* {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .site-header img {
+    max-width: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .call-to-action {
+    display: none;
+  }
+  .site-description {
+    display: none;
+  }
+  .site-header {
+    background: $color__background-header;
+    position: relative;
+    width: 100%;
+    padding-top: 0;
+    .wrap {
+      height: auto;
+    }
+  }
+  .site-header a {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  .content img {
+    max-width: 750px;
+    max-height: 750px;
+    width: 30%;
+    height: 30%;
+    box-shadow: 0 0 7px rgba(124, 124, 124, 0.5);
+    margin: 32px 15px 0 0;
+    @media screen and (max-width: 768px) {
+      margin: 32px 0;
+    }
+  }
+  .signup-form {
+    background: #f5f5f5;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .signup-form form,
+  .safe-text {
+    width: 70%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  #signup-form {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+  }
+  input[type="email"] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 1.2rem;
+  }
+  input[type='submit'] {
+    font-size: 18px;
+    @include button;
+    margin: .5rem 0 0 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      bottom: 5px;
+      margin: 0;
+    }
+  }
+  .safe-text {
+    color: rgba(64, 64, 64, .7);
+    font-weight: light;
+    margin-top: .5rem;
+    font-size: 14px;
+  }
+}

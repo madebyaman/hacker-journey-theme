@@ -1,0 +1,129 @@
+/* Responsive Menu
+--------------------------------------------- */
+
+.nav-primary {
+	clear: left;
+	width: 100%;
+}
+
+.menu .menu-item:focus {
+	position: static;
+}
+
+.menu .menu-item>a:focus+ul.sub-menu,
+.menu .menu-item.sfHover>ul.sub-menu {
+	left: auto;
+	opacity: 1;
+}
+
+.genesis-responsive-menu {
+	display: none;
+	padding-bottom: 15px;
+	position: relative;
+}
+
+.menu-toggle,
+.sub-menu-toggle {
+	background-color: transparent;
+	border-width: 0;
+	color: $color__text-main;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	visibility: visible;
+}
+
+.menu-toggle:focus,
+.menu-toggle:hover,
+.sub-menu-toggle:focus,
+.sub-menu-toggle:hover {
+	background-color: transparent;
+	color: $color__text-accent;
+	border-width: 0;
+}
+
+.menu-toggle {
+	line-height: 20px;
+	margin-bottom: 16px;
+	margin-top: 16px;
+	padding: 15px 0;
+	position: relative;
+	z-index: 1000;
+	display: flex;
+}
+
+.menu-toggle.activated::before {
+	content: "\f335";
+}
+
+.site-header .menu-toggle::before {
+	margin-right: 5px;
+	text-rendering: auto;
+}
+
+.sub-menu-toggle {
+	float: right;
+	padding: 9px 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.sub-menu .sub-menu-toggle {
+	padding: 12px 10px;
+}
+
+.sub-menu-toggle::before {
+	display: inline-block;
+	text-rendering: auto;
+	-webkit-transform: rotate( 0);
+	-ms-transform: rotate( 0);
+	transform: rotate( 0);
+	transition: transform .25s ease-in-out;
+}
+
+.sub-menu-toggle.activated::before {
+	transform: rotate( 180deg);
+}
+
+@media only screen and ( min-width: 768px) {
+	/* Responsive Menu
+	--------------------------------------------- */
+	.genesis-responsive-menu {
+		display: block;
+		padding-top: 15px;
+	}
+	.menu-toggle,
+	.sub-menu-toggle {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+/* Primary Menu
+--------------------------------------------- */
+
+.genesis-nav-menu {
+	list-style: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	a {
+		color: $color__text-main;
+		display: block;
+		border-bottom: 0;
+		transition-property: border, padding;
+		transition-duration: 0.3s;
+		transition-timing-function: ease-in-out;
+		padding: 5px;
+		&:hover,
+		&:focus {
+			color: $color__text-accent;
+			border-bottom: 0;
+			border-left: 3px solid $color__text-accent;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+}

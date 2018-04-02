@@ -1,0 +1,90 @@
+/*!
+Theme Name: Hacker Journey
+Theme URI: http://hackerjourney.com/
+Author: Aman Thakur
+Author URI: http://www.amanthakur.me
+Description: This is the custom theme built by Aman Thakur for his blog Hacker Journey. Contact him to help you build yours.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: hacker
+Template: genesis
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# HTML5 Reset
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+/*--------------------------------------------------------------
+# HTML5 Reset
+--------------------------------------------------------------*/
+
+@import "normalize";
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+@import "typography/typography";
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+@import "elements/elements";
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+@import "forms/forms";
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+@import "navigation/navigation";
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+
+@import "modules/accessibility";
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+
+@import "modules/alignments";
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+@import "site/site";
+/*--------------------------------------------------------------
+## Landing Page Styles
+--------------------------------------------------------------*/
+
+@import "site/primary/landing";
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+@import "media/media";

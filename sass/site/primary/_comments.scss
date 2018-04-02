@@ -1,0 +1,24 @@
+.comment-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	ul {
+		list-style: none;
+	}
+	article {
+		margin-bottom: 1rem;
+	}
+}
+
+.comment-author {
+	display: flex;
+	align-items: center;
+}
+
+.comment-list span:nth-of-type(n+1) {
+	margin-left: 0.5rem;
+}
+
+.avatar {
+	border-radius: 50%;
+}
