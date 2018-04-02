@@ -17,10 +17,11 @@ function hacker_add_body_class($classes)
 
 }
 
-add_action('genesis_after_content', 'signup_form');
+add_action('genesis_after_content_sidebar_wrap', 'signup_form');
 function signup_form()
 {
-  ?><div class="signup-form">
+  ?>
+  <div class="signup-form">
   <form id="signup-form" action="<?php the_field('form-action'); ?>" method="post"  target="_blank" name="landing-signup-form">
 		<input type="email" value="" id="subbox" placeholder="Enter your e-mail address" name="email" required="required" />
     <input type="submit" value="Get your free gift" id="subbutton" />

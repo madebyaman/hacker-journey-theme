@@ -24,7 +24,7 @@
     display: none;
   }
   .site-header {
-    background: $color__background-header;
+    background: white;
     position: relative;
     width: 100%;
     padding-top: 0;
@@ -58,10 +58,9 @@
     }
   }
   .signup-form {
-    background: #f5f5f5;
+    background: $color__background-header;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    margin-top: 3rem;
   }
   .signup-form form,
   .safe-text {
@@ -83,19 +82,32 @@
     font-size: 18px;
     @include button;
     margin: .5rem 0 0 0;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     @media screen and (min-width: 768px) {
       position: absolute;
       right: 5px;
       top: 5px;
       bottom: 5px;
       margin: 0;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     }
   }
   .safe-text {
-    color: rgba(64, 64, 64, .7);
+    color: rgba(255, 255, 255, .8);
     font-weight: light;
     margin-top: .5rem;
     font-size: 14px;
+  }
+  .wave {
+    height: 52px;
+    margin-top: 0px;
+    margin-bottom: -1px;
+    background-image: url(images/wave.svg);
+    background-position: 50% 50%;
+    background-size: 382px 53px;
+    background-repeat: repeat-x;
+  }
+  .content-sidebar-wrap {
+    background: url(images/hero-bg.png) bottom center repeat-x;
+    padding-bottom: 3rem;
   }
 }

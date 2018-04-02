@@ -78,8 +78,8 @@ function hacker_setup()
   add_theme_support(
     'custom-logo',
     array(
-      'height' => 120,
-      'width' => 700,
+      'height' => 150,
+      'width' => 150,
       'flex-height' => true,
       'flex-width' => true,
     )
@@ -124,7 +124,7 @@ function hacker_setup()
   add_filter('get_the_content_more_link', 'hacker_read_more_link');
   function hacker_read_more_link()
   {
-    return '<p><a class="more-link" href="' . get_permalink() . '">Read More>></a></p>';
+    return '<p><a class="more-link" href="' . get_permalink() . '">Read More >></a></p>';
   }
 
   //* Change the footer text

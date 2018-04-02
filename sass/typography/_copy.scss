@@ -30,3 +30,10 @@ pre {
 	color: rgba(64, 64, 64, 0.85);
 	text-transform: uppercase;
 }
+
+.entry-content p,
+.entry-content ul li,
+.entry-content ol li,
+.entry-content a {
+	font-size: 19px;
+}

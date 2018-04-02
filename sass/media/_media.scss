@@ -7,6 +7,12 @@
 	padding: 0;
 }
 
+/* Force images in archive pages to take less width */
+
+.entry-content img {
+	width: 50%;
+}
+
 /* Make sure embeds and iframes fit their containers. */
 
 embed,
@@ -36,7 +42,7 @@ object {
 /* Title Area
 --------------------------------------------- */
 
-.wp-custom-logo a {
+.title-area a {
 	border-bottom: 0;
 	&:hover {
 		border-bottom: 0;

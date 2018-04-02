@@ -357,6 +357,13 @@ pre {
 	text-transform: uppercase;
 }
 
+.entry-content p,
+.entry-content ul li,
+.entry-content ol li,
+.entry-content a {
+	font-size: 19px;
+}
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -896,8 +903,8 @@ aside {
 /* Site Container
 --------------------------------------------- */
 .site-container {
-	-webkit-animation: fadein 1s;
-	        animation: fadein 1s;
+	-webkit-animation: fadein 1.5s;
+	        animation: fadein 1.5s;
 }
 
 @-webkit-keyframes fadein {
@@ -924,6 +931,16 @@ aside {
 
 .site-description {
 	display: none;
+}
+
+.site-header > .wrap {
+	max-width: 280px;
+	margin: 0 auto;
+}
+
+.content-sidebar-wrap {
+	max-width: 928px;
+	margin: 0 auto;
 }
 
 /* Header - Content Layout
@@ -1022,6 +1039,9 @@ aside {
 --------------------------------------------------------------*/
 .sticky {
 	display: block;
+	background: #E8FFFD;
+	border-left: 3px solid #404040;
+	padding: 1rem;
 }
 
 .hentry {
@@ -1111,7 +1131,7 @@ aside {
 }
 
 .hacker-landing .site-header {
-	background: #5C5C5C;
+	background: white;
 	position: relative;
 	width: 100%;
 	padding-top: 0;
@@ -1169,10 +1189,9 @@ aside {
 }
 
 .hacker-landing .signup-form {
-	background: #f5f5f5;
+	background: #5C5C5C;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
-	margin-top: 3rem;
 }
 
 .hacker-landing .signup-form form,
@@ -1205,8 +1224,6 @@ aside {
 	text-decoration: none;
 	border-radius: 5px;
 	margin: .5rem 0 0 0;
-	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
-	        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hacker-landing input[type='submit']:hover {
@@ -1227,14 +1244,31 @@ aside {
 		top: 5px;
 		bottom: 5px;
 		margin: 0;
+		-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+		        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 	}
 }
 
 .hacker-landing .safe-text {
-	color: rgba(64, 64, 64, 0.7);
+	color: rgba(255, 255, 255, 0.8);
 	font-weight: light;
 	margin-top: .5rem;
 	font-size: 14px;
+}
+
+.hacker-landing .wave {
+	height: 52px;
+	margin-top: 0px;
+	margin-bottom: -1px;
+	background-image: url(images/wave.svg);
+	background-position: 50% 50%;
+	background-size: 382px 53px;
+	background-repeat: repeat-x;
+}
+
+.hacker-landing .content-sidebar-wrap {
+	background: url(images/hero-bg.png) bottom center repeat-x;
+	padding-bottom: 3rem;
 }
 
 /*--------------------------------------------------------------
@@ -1247,6 +1281,11 @@ aside {
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 0;
+}
+
+/* Force images in archive pages to take less width */
+.entry-content img {
+	width: 50%;
 }
 
 /* Make sure embeds and iframes fit their containers. */
@@ -1337,11 +1376,11 @@ object {
 
 /* Title Area
 --------------------------------------------- */
-.wp-custom-logo a {
+.title-area a {
 	border-bottom: 0;
 }
 
-.wp-custom-logo a:hover {
+.title-area a:hover {
 	border-bottom: 0;
 }
 
